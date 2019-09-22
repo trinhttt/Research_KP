@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vhj-P4-VdV">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="KPM-HR-MQJ">
+            <objects>
+                <viewController id="Vhj-P4-VdV" customClass="LaunchScreenViewController" customModule="BauCuaGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbH-iH-Xvh">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Ym-C9-ElT">
+                                <rect key="frame" x="373" y="132" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2F0-aF-rMC"/>
+                                    <constraint firstAttribute="width" constant="150" id="Cn1-yF-Zww"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Ym-C9-ElT" firstAttribute="centerX" secondItem="sbH-iH-Xvh" secondAttribute="centerX" id="8UL-6o-9AL"/>
+                            <constraint firstItem="9Ym-C9-ElT" firstAttribute="centerY" secondItem="sbH-iH-Xvh" secondAttribute="centerY" id="fGf-8d-jj1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d2J-Ll-Px7"/>
+                    </view>
+                    <connections>
+                        <outlet property="ibLogoImg" destination="9Ym-C9-ElT" id="Hpg-W4-ciq"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueFromLaunchVCTOMainVC" animates="NO" id="KPp-Ci-3Go"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aH0-n1-BT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BauCuaGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rGY-Jh-FUg">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-5X-UvT">
+                                <rect key="frame" x="164" y="145.5" width="568" height="123"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bau" translatesAutoresizingMaskIntoConstraints="NO" id="7cY-K2-k2y">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="123"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7cY-K2-k2y" secondAttribute="height" id="2u7-WL-QYg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bau" translatesAutoresizingMaskIntoConstraints="NO" id="1AQ-36-QHu">
+                                        <rect key="frame" x="222.5" y="0.0" width="123" height="123"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bau" translatesAutoresizingMaskIntoConstraints="NO" id="gP4-Li-ame">
+                                        <rect key="frame" x="445.5" y="0.0" width="122.5" height="123"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rGY-Jh-FUg" secondAttribute="bottom" id="2fd-nq-9mP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jt0-5X-UvT" secondAttribute="trailing" constant="120" id="3KV-GX-HIE"/>
+                            <constraint firstItem="rGY-Jh-FUg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V0m-El-fRd"/>
+                            <constraint firstAttribute="trailing" secondItem="rGY-Jh-FUg" secondAttribute="trailing" id="VEe-5i-6pF"/>
+                            <constraint firstItem="Jt0-5X-UvT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XV4-hV-tgH"/>
+                            <constraint firstItem="Jt0-5X-UvT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="eNp-VM-cQC"/>
+                            <constraint firstItem="rGY-Jh-FUg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ja7-Ru-zTJ"/>
+                            <constraint firstItem="Jt0-5X-UvT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xib-tC-brq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Jt0-5X-UvT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3KV-GX-HIE"/>
+                                <exclude reference="XV4-hV-tgH"/>
+                                <exclude reference="eNp-VM-cQC"/>
+                                <exclude reference="xib-tC-brq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Jt0-5X-UvT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3KV-GX-HIE"/>
+                                <include reference="XV4-hV-tgH"/>
+                                <include reference="eNp-VM-cQC"/>
+                                <include reference="xib-tC-brq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outletCollection property="ibResultImages" destination="7cY-K2-k2y" collectionClass="NSMutableArray" id="5jA-xs-eHA"/>
+                        <outletCollection property="ibResultImages" destination="1AQ-36-QHu" collectionClass="NSMutableArray" id="drr-ff-Beu"/>
+                        <outletCollection property="ibResultImages" destination="gP4-Li-ame" collectionClass="NSMutableArray" id="KsN-k2-6gO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22.767857142857142" y="44.927536231884062"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="421" height="292"/>
+        <image name="bau" width="130" height="129"/>
+        <image name="logo" width="300" height="300"/>
+    </resources>
+</document>

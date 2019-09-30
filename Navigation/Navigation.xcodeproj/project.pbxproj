@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E28D60E2341BEF900217169 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E28D60D2341BEF900217169 /* HistoryViewController.swift */; };
+		0E28D6102341BF1200217169 /* FaroriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E28D60F2341BF1200217169 /* FaroriteViewController.swift */; };
+		0E28D6122341BF1F00217169 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E28D6112341BF1F00217169 /* SearchViewController.swift */; };
+		0E28D6142341F87E00217169 /* TranlucentNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E28D6132341F87E00217169 /* TranlucentNaviViewController.swift */; };
 		0EFE0960233F39AB00A0E4F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE095F233F39AB00A0E4F8 /* AppDelegate.swift */; };
 		0EFE0962233F39AB00A0E4F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE0961233F39AB00A0E4F8 /* ViewController.swift */; };
 		0EFE0965233F39AB00A0E4F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE0963233F39AB00A0E4F8 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E28D60D2341BEF900217169 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0E28D60F2341BF1200217169 /* FaroriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaroriteViewController.swift; sourceTree = "<group>"; };
+		0E28D6112341BF1F00217169 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0E28D6132341F87E00217169 /* TranlucentNaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranlucentNaviViewController.swift; sourceTree = "<group>"; };
 		0EFE095C233F39AB00A0E4F8 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFE095F233F39AB00A0E4F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EFE0961233F39AB00A0E4F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E28D60C2341BE9E00217169 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE0978233F558000A0E4F8 /* TabBarViewController.swift */,
+				0EFE0972233F3B8000A0E4F8 /* HomeViewController.swift */,
+				0E28D60F2341BF1200217169 /* FaroriteViewController.swift */,
+				0E28D60D2341BEF900217169 /* HistoryViewController.swift */,
+				0E28D6112341BF1F00217169 /* SearchViewController.swift */,
+				0E28D6132341F87E00217169 /* TranlucentNaviViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		0EFE0953233F39AB00A0E4F8 = {
 			isa = PBXGroup;
 			children = (
@@ -75,11 +96,10 @@
 		0EFE0971233F3A8A00A0E4F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0E28D60C2341BE9E00217169 /* TabBar */,
 				0EFE0961233F39AB00A0E4F8 /* ViewController.swift */,
-				0EFE0972233F3B8000A0E4F8 /* HomeViewController.swift */,
 				0EFE0974233F3B8F00A0E4F8 /* RegisterViewController.swift */,
 				0EFE0976233F3F2000A0E4F8 /* ProfileViewController.swift */,
-				0EFE0978233F558000A0E4F8 /* TabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,11 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E28D6142341F87E00217169 /* TranlucentNaviViewController.swift in Sources */,
 				0EFE0962233F39AB00A0E4F8 /* ViewController.swift in Sources */,
 				0EFE0960233F39AB00A0E4F8 /* AppDelegate.swift in Sources */,
+				0E28D6102341BF1200217169 /* FaroriteViewController.swift in Sources */,
+				0E28D6122341BF1F00217169 /* SearchViewController.swift in Sources */,
 				0EFE0977233F3F2000A0E4F8 /* ProfileViewController.swift in Sources */,
 				0EFE0973233F3B8000A0E4F8 /* HomeViewController.swift in Sources */,
 				0EFE0979233F558000A0E4F8 /* TabBarViewController.swift in Sources */,
+				0E28D60E2341BEF900217169 /* HistoryViewController.swift in Sources */,
 				0EFE0975233F3B8F00A0E4F8 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

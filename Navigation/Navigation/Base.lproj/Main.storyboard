@@ -46,9 +46,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="4ck-bt-pEH"/>
-                    <connections>
-                        <segue destination="Leh-60-NN5" kind="show" id="9wT-s7-jTQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PS6-cX-DEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2099" y="474"/>
+            <point key="canvasLocation" x="4719" y="765"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="U7G-4r-hzg">
@@ -159,7 +156,7 @@
         <!--Item 2-->
         <scene sceneID="0uc-7W-02P">
             <objects>
-                <viewController id="4Wl-Mx-BFe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FaroriteViewController" id="4Wl-Mx-BFe" customClass="FaroriteViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b0R-Xk-TZL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,12 +167,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08o-aj-8bW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4791" y="1077"/>
+            <point key="canvasLocation" x="5596" y="765"/>
         </scene>
         <!--Item-->
         <scene sceneID="cCh-p5-oCw">
             <objects>
-                <viewController id="WrG-uL-GxT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="WrG-uL-GxT" customClass="SearchViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="msn-AK-U1r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,12 +183,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKK-IF-kmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3868" y="1523"/>
+            <point key="canvasLocation" x="7349" y="751"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="ztu-az-7CW">
             <objects>
-                <viewController id="U8q-uO-lHt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" id="U8q-uO-lHt" customClass="HistoryViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ocf-BG-IRP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2F-e3-EjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4791" y="431"/>
+            <point key="canvasLocation" x="6488" y="765"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="knx-fb-3af">
@@ -213,11 +210,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="4Wl-Mx-BFe" kind="relationship" relationship="viewControllers" id="sYy-tV-2Bm"/>
-                        <segue destination="WrG-uL-GxT" kind="relationship" relationship="viewControllers" id="QdF-Mc-Mra"/>
-                        <segue destination="U8q-uO-lHt" kind="relationship" relationship="viewControllers" id="1fP-mc-Vgb"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RuJ-ZY-Zzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

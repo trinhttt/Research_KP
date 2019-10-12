@@ -34,7 +34,7 @@ class PlayMusicViewController: UIViewController {
     
     func rotateImage() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (finish) in
-            self.ibImage.transform = self.ibImage.transform.rotated(by: .pi/180)
+            self.ibImage.transform = self.ibImage.transform.rotated(by: .pi/360)
         }
     }
     
@@ -42,8 +42,8 @@ class PlayMusicViewController: UIViewController {
         guard let url = Bundle.main.url(forResource: "Buoc-Qua-Doi-Nhau-Le-Bao-Binh", withExtension: "mp3") else { return }
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
+//            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+//            try AVAudioSession.sharedInstance().setActive(true)
 
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
             

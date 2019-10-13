@@ -17,6 +17,7 @@
 		0E7FE1DF2351B34E00F3472C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7FE1DE2351B34E00F3472C /* ProductCell.swift */; };
 		0E7FE1E12351BCDA00F3472C /* CategoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7FE1E02351BCDA00F3472C /* CategoryItemCell.swift */; };
 		0E7FE1E32351BCE900F3472C /* ProductItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7FE1E22351BCE900F3472C /* ProductItemCell.swift */; };
+		0E7FE1E52352CA4C00F3472C /* BannerItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7FE1E42352CA4C00F3472C /* BannerItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0E7FE1DE2351B34E00F3472C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		0E7FE1E02351BCDA00F3472C /* CategoryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemCell.swift; sourceTree = "<group>"; };
 		0E7FE1E22351BCE900F3472C /* ProductItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCell.swift; sourceTree = "<group>"; };
+		0E7FE1E42352CA4C00F3472C /* BannerItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				0E7FE1DE2351B34E00F3472C /* ProductCell.swift */,
 				0E7FE1E02351BCDA00F3472C /* CategoryItemCell.swift */,
 				0E7FE1E22351BCE900F3472C /* ProductItemCell.swift */,
+				0E7FE1E42352CA4C00F3472C /* BannerItemCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				0E7FE1E12351BCDA00F3472C /* CategoryItemCell.swift in Sources */,
 				0E7FE1CA2351B2E200F3472C /* ViewController.swift in Sources */,
 				0E7FE1C82351B2E200F3472C /* AppDelegate.swift in Sources */,
+				0E7FE1E52352CA4C00F3472C /* BannerItemCell.swift in Sources */,
 				0E7FE1DF2351B34E00F3472C /* ProductCell.swift in Sources */,
 				0E7FE1DB2351B32300F3472C /* BannerCell.swift in Sources */,
 				0E7FE1DD2351B33C00F3472C /* CategoryCell.swift in Sources */,

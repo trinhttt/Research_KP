@@ -22,16 +22,76 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="95" id="Jvz-4i-MZ7" customClass="BannerCell" customModule="SaleLayout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="95"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BannerCell" rowHeight="219" id="Jvz-4i-MZ7" customClass="BannerCell" customModule="SaleLayout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="219"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jvz-4i-MZ7" id="aPL-PE-knS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="218.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1SB-cl-zvX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="218.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="oP5-x4-zg5">
+                                                        <size key="itemSize" width="406" height="217"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerItemCell" id="vbt-8A-IHQ" customClass="BannerItemCell" customModule="SaleLayout" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="1" width="406" height="217"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="406" height="217"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gbh-jy-jui">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="406" height="217"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="217" id="6Kb-bC-ySp"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="gbh-jy-jui" secondAttribute="trailing" id="2Cr-4G-G4p"/>
+                                                                <constraint firstItem="gbh-jy-jui" firstAttribute="top" secondItem="vbt-8A-IHQ" secondAttribute="top" id="95C-uP-6VY"/>
+                                                                <constraint firstItem="gbh-jy-jui" firstAttribute="leading" secondItem="vbt-8A-IHQ" secondAttribute="leading" id="o4d-7f-FU4"/>
+                                                                <constraint firstAttribute="bottom" secondItem="gbh-jy-jui" secondAttribute="bottom" id="uFf-lt-4as"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="ibImage" destination="gbh-jy-jui" id="qdt-B3-PDo"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="Jvz-4i-MZ7" id="ZXF-wL-b35"/>
+                                                        <outlet property="delegate" destination="Jvz-4i-MZ7" id="NYU-xO-7Uq"/>
+                                                    </connections>
+                                                </collectionView>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="KfA-Yr-ShM">
+                                                    <rect key="frame" x="187.5" y="161" width="39" height="37"/>
+                                                    <color key="pageIndicatorTintColor" red="0.16291445490000001" green="0.71384817359999997" blue="0.95125323530000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="currentPageIndicatorTintColor" red="0.86818844080000002" green="0.2337842584" blue="0.056472718720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </pageControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1SB-cl-zvX" firstAttribute="leading" secondItem="aPL-PE-knS" secondAttribute="leading" id="4Iq-l3-Wtu"/>
+                                                <constraint firstItem="KfA-Yr-ShM" firstAttribute="centerX" secondItem="aPL-PE-knS" secondAttribute="centerX" id="4J2-Jc-nCP"/>
+                                                <constraint firstAttribute="bottom" secondItem="1SB-cl-zvX" secondAttribute="bottom" id="Jdb-5j-RXV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="KfA-Yr-ShM" secondAttribute="bottom" constant="10" id="Rfv-um-pHT"/>
+                                                <constraint firstItem="1SB-cl-zvX" firstAttribute="top" secondItem="aPL-PE-knS" secondAttribute="top" id="VNL-8U-D2k"/>
+                                                <constraint firstAttribute="trailing" secondItem="1SB-cl-zvX" secondAttribute="trailing" id="hzw-22-6gk"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ibCollectionView" destination="1SB-cl-zvX" id="Ri4-o6-Pne"/>
+                                            <outlet property="ibPageControl" destination="KfA-Yr-ShM" id="3H0-Hb-2rP"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="77" id="VRr-b6-xEK" customClass="CategoryCell" customModule="SaleLayout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="123" width="414" height="77"/>
+                                        <rect key="frame" x="0.0" y="247" width="414" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRr-b6-xEK" id="2Kw-E8-SpM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="76.5"/>
@@ -96,7 +156,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="272" id="u3c-xE-qY8" customClass="ProductCell" customModule="SaleLayout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="414" height="272"/>
+                                        <rect key="frame" x="0.0" y="324" width="414" height="272"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u3c-xE-qY8" id="D6g-Mm-c1b">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="271.5"/>

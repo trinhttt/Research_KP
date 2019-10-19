@@ -1,5 +1,5 @@
 //
-//  ProductCell.swift
+//  CategoryCell.swift
 //  SaleLayout
 //
 //  Created by Trinh Thai on 10/12/19.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ProductCell: UITableViewCell {
+class CategoryCell: UITableViewCell {
 
     @IBOutlet weak var ibCollectionView: UICollectionView!
     
-    let arr1 = ["A", "B", "C", "D"]
-    let arr2 = ["1", "2", "3", "4"]
+    let arr = ["Loai A", "Loai B", "Loai C"]
     override func awakeFromNib() {
         super.awakeFromNib()
         ibCollectionView.delegate = self
@@ -27,17 +26,15 @@ class ProductCell: UITableViewCell {
     }
 
 }
-extension ProductCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CategoryCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arr1.count
+        return arr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductItemCell", for: indexPath) as? ProductItemCell {
-            cell.ibLabel1.text = arr1[indexPath.row]
-            cell.ibLabel2.text = arr2[indexPath.row]
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryItemCell", for: indexPath) as? CategoryItemCell {
+            cell.ibLabel.text = arr[indexPath.row]
             return cell
-
         }
         return UICollectionViewCell()
     }

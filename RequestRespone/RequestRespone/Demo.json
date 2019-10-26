@@ -1,0 +1,10 @@
+//string: Any
+{
+    "hoten": "Trinh",
+    "namsinh": 1997,
+    "thethao": [{"mon": "da cau", "yeuthich": 9}, {"mon": "cau long", "yeuthich": 8}],
+    "diemso": {
+        "toan": 9,
+        "ly": 8
+    }
+}

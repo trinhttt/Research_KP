@@ -18,6 +18,11 @@ class ProductCell: UITableViewCell {
         super.awakeFromNib()
         ibCollectionView.delegate = self
         ibCollectionView.dataSource = self
+        ProductService.instance.getProductList { (success) in
+            if success {
+                self.ibCollectionView.reloadData()
+            }
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,13 +34,13 @@ class ProductCell: UITableViewCell {
 }
 extension ProductCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arr1.count
+        return ProductService.instance.productList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductItemCell", for: indexPath) as? ProductItemCell {
-            cell.ibLabel1.text = arr1[indexPath.row]
-            cell.ibLabel2.text = arr2[indexPath.row]
+            cell.ibLabel1.text = ProductService.instance.productList[indexPath.row].name
+            cell.ibLabel2.text = ProductService.instance.productList[indexPath.row].price
             return cell
 
         }

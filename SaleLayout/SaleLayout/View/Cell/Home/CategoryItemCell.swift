@@ -11,6 +11,10 @@ import UIKit
 class CategoryItemCell: UICollectionViewCell {
     
     @IBOutlet weak var ibLabel: UILabel!
+    
+    func configureCell(cate: Category) {
+        ibLabel.text = cate.name
+    }
 }
 
 

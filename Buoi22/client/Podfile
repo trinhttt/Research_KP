@@ -1,0 +1,8 @@
+target 'client' do
+
+  use_frameworks!
+
+	pod 'Alamofire'
+	pod 'DKImagePickerController'
+
+end
